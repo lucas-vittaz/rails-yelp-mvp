@@ -1,9 +1,19 @@
-<h1 class="text-center">🍕🍔🌭🍟 Welcome on Restaurant trip advisor 🍕🍔🌭🍟</h1>
+
+<div class="container text-center ">
+  <div class="row">
+    <div class="col py-5">
+      <h1 class="text-center  py-5">🍕🍔🌭🍟 Welcome on Restaurant trip advisor 🍕🍔🌭🍟</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, dicta vitae? Nostrum expedita eius numquam vitae debitis fugit voluptatum quisquam placeat repudiandae nobis veritatis, repellendus quia vero adipisci unde fuga.</p>
+    </div>
+  </div>
+</div>
+
+
 
 <div class="container text-center">
   <div class="row">
-    <div class="col">
-      <ul>
+    <div class="col py-5">
+      <ul class="list-unstyled">
         <% @restaurants.each do |restaurant|%>
           <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
         <% end %>
@@ -12,5 +22,4 @@
   </div>
 </div>
 
-<p>Find me in app/views/restaurant/index.html.erb</p>
 <%# <%="⭐" * restaurant.rating% %>
